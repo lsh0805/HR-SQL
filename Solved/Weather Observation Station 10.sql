@@ -1,0 +1,1 @@
+SELECT DISTINCT CITY FROM STATION WHERE substr(CITY, length(CITY), 1) not in ('a', 'e', 'i', 'o', 'u');
