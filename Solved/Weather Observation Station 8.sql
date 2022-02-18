@@ -1,0 +1,1 @@
+SELECT DISTINCT CITY FROM STATION WHERE substr(CITY, 1, 1) in ('a', 'e', 'i', 'o', 'u') and substr(reverse(CITY), 1, 1) in ('a', 'e', 'i', 'o', 'u');
