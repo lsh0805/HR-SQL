@@ -1,0 +1,1 @@
+SELECT NAME FROM STUDENTS WHERE Marks > 75 order by substr(Name, length(Name) - 2, 3), ID;

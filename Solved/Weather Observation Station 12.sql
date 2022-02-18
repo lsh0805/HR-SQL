@@ -1,0 +1,1 @@
+Weather Observation Station 12SELECT DISTINCT CITY FROM STATION WHERE substr(lower(CITY), 1, 1) not in ('a', 'e', 'i', 'o', 'u') and substr(lower(CITY), length(CITY), 1) not in ('a', 'e', 'i', 'o', 'u');
