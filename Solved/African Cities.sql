@@ -1,0 +1,1 @@
+SELECT a.NAME FROM CITY a, COUNTRY b WHERE a.countrycode = b.code and b.continent = 'Africa';

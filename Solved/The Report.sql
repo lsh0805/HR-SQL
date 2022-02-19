@@ -1,0 +1,1 @@
+SELECT if(g.grade >= 8, s.name, NULL), g.grade, s.marks FROM Students s, Grades g WHERE s.marks BETWEEN g.min_mark AND g.max_mark order by g.grade desc, if(g.grade >= 8, s.name, NULL), s.marks;

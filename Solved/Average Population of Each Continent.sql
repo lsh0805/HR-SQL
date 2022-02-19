@@ -1,0 +1,1 @@
+SELECT b.continent, floor(avg(a.population)) FROM CITY a, COUNTRY b WHERE a.countrycode = b.code group by b.continent;
