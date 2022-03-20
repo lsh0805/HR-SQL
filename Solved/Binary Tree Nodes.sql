@@ -1,0 +1,7 @@
+SELECT n,
+CASE
+    WHEN p IS NULL THEN "Root"
+    WHEN (SELECT COUNT(p) FROM BST WHERE p = a.n) >= 1 THEN "Inner"
+    ELSE "Leaf" END
+FROM BST a
+ORDER BY n;
